@@ -2,7 +2,7 @@ package mysql_utils
 
 import (
 	"fmt"
-	"github.com/fvukojevic/bookstore_users-api/utils/errors"
+	"github.com/fvukojevic/bookstore_util-go/utils/errors"
 	"github.com/go-sql-driver/mysql"
 	"strings"
 )
