@@ -16,7 +16,7 @@ func NewRestErrorFromBytes(bytes []byte) (*RestErr, error) {
 	if err := json.Unmarshal(bytes, &apiErr); err != nil{
 		return nil, err
 	}
-	return apiErr, nil
+	return &apiErr, nil
 }
 
 func NewBadRequestError(message string) *RestErr {
